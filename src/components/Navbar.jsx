@@ -33,9 +33,6 @@ let navbar = () => {
         </button>
       </div>
       <hr />
-      <div className="slider">
-        <h1>this is slider</h1>
-      </div>
     </>
   );
 };
