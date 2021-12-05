@@ -1,0 +1,69 @@
+.container {
+  /* background-color: aqua; */
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-left: 20px;
+  font-family: "Lobster", cursive;
+  color: chocolate;
+  font-size: 23px;
+}
+
+.container ul {
+  display: flex;
+  margin-left: 25px;
+}
+.container ul li {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  margin-top: 30px;
+}
+.container ul li span {
+  font-size: 20px;
+  color: rgb(36, 19, 65);
+  font-family: "Montserrat", sans-serif;
+}
+.cool-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background: rgb(23, 22, 56);
+  transition: width 0.3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+}
+
+.input {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid chocolate;
+  border-radius: 20px;
+  width: 400px;
+  margin-left: 30px;
+}
+.registration {
+  margin-top: 20px;
+  padding: 10px 40px;
+  border: 2px solid black;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 20px;
+  background-color: white;
+  font-weight: bolder;
+  color: black;
+}
+.registration:hover {
+  cursor: pointer;
+}
+
+#signin {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: black;
+  color: white;
+}
