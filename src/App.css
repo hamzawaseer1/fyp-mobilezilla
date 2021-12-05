@@ -1,5 +1,4 @@
 .container {
-  /* background-color: aqua; */
   height: 80px;
   display: flex;
   align-items: center;
@@ -25,18 +24,6 @@
   font-size: 20px;
   color: rgb(36, 19, 65);
   font-family: "Montserrat", sans-serif;
-}
-.cool-link::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 4px;
-  background: rgb(23, 22, 56);
-  transition: width 0.3s;
-}
-
-.cool-link:hover::after {
-  width: 100%;
 }
 
 .input {
@@ -68,4 +55,38 @@
 #login {
   background-color: black;
   color: white;
+}
+
+.Nav_link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background: rgb(23, 22, 56);
+  transition: width 0.3s;
+}
+
+.Nav_link:hover::after {
+  width: 100%;
+}
+
+.Nav_link:link {
+  color: teal;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  text-decoration: none;
+}
+.Nav_link {
+  color: black;
+}
+
+.Nav_link:hover {
+  color: black;
+}
+.Nav_link.active {
+  border-bottom: 4px solid rgb(23, 22, 56);
+}
+
+.Nav_link.active:hover::after {
+  display: none;
 }

@@ -1,12 +1,15 @@
 import './App.css';
 import Nav from "./components/Navbar"
-import Slider from "./components/Slider"
+import { BrowserRouter } from "react-router-dom";
+
 
 function App() {
   return (
     <>
-    <Nav />
-    <Slider />
+      <BrowserRouter>
+        <Nav />
+      </BrowserRouter>
+      
     </>
   );
 }

@@ -1,4 +1,15 @@
 import React from "react";
+import {
+  BrowserRouter as Router,
+  NavLink,
+  Route,
+  Routes,
+} from "react-router-dom";
+import About from "./About";
+import Services from "./Services";
+import Home from "./Home";
+import Contact from "./Contact";
+
 let navbar = () => {
   return (
     <>
@@ -8,20 +19,38 @@ let navbar = () => {
         </div>
         <ul>
           <li>
-            {" "}
-            <span class="cool-link">Home</span>{" "}
+            <NavLink to="/" exact className="Nav_link" activeClassName="active">
+              Home
+            </NavLink>
           </li>
           <li>
-            {" "}
-            <span class="cool-link">About</span>{" "}
+            <NavLink
+              exact
+              to="/about"
+              className="Nav_link"
+              activeClassName="active"
+            >
+              About
+            </NavLink>
           </li>
           <li>
-            {" "}
-            <span class="cool-link">Services</span>{" "}
+            <NavLink
+              exact
+              to="/services"
+              className="Nav_link"
+              activeClassName="active"
+            >
+              Services
+            </NavLink>
           </li>
           <li>
-            {" "}
-            <span class="cool-link">Contact</span>{" "}
+            <NavLink
+              to="/contact"
+              className="Nav_link"
+              activeClassName="active"
+            >
+              Contact
+            </NavLink>
           </li>
         </ul>
         <input className="input" placeholder="Search Phones" type="text" />
@@ -33,6 +62,13 @@ let navbar = () => {
         </button>
       </div>
       <hr />
+
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/services" element={<Services />} />
+        <Route exact path="/contact" element={<Contact />} />
+      </Routes>
     </>
   );
 };
