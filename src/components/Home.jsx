@@ -20,7 +20,7 @@ let Home = () => {
           </div>
         </div>
         <div className="tasbeh">
-          <img src="images/hamzapsd.png" />
+          <img src="images/hamza.jpg" />
         </div>
       </div>
     </>
