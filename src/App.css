@@ -1,13 +1,15 @@
 .container {
-  height: 80px;
+  height: 70px;
+  padding-top: 20px;
   display: flex;
   align-items: center;
 }
 .logo {
   margin-left: 20px;
-  font-family: "Lobster", cursive;
-  color: chocolate;
+  font-family: "Roboto Slab", serif;
+  color: rgb(0, 0, 0);
   font-size: 23px;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
 .container ul {
@@ -21,7 +23,7 @@
   margin-top: 30px;
 }
 .container ul li span {
-  font-size: 20px;
+  font-size: 14px;
   color: rgb(36, 19, 65);
   font-family: "Montserrat", sans-serif;
 }
@@ -62,7 +64,7 @@
   display: block;
   width: 0;
   height: 4px;
-  background: rgb(23, 22, 56);
+  background: #d7c547;
   transition: width 0.3s;
 }
 
@@ -75,6 +77,7 @@
   font-size: 1.6rem;
   line-height: 1.6rem;
   text-decoration: none;
+  font-family: "Roboto Slab", serif;
 }
 .Nav_link {
   color: black;
@@ -84,9 +87,136 @@
   color: black;
 }
 .Nav_link.active {
-  border-bottom: 4px solid rgb(23, 22, 56);
+  border-bottom: 4px solid #d7c547;
 }
 
 .Nav_link.active:hover::after {
   display: none;
+}
+
+/* .tasbeh {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tasbeh span {
+  margin: 20px;
+  font-weight: bolder;
+  font-size: 70px;
+}
+.tasbeh button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 40px;
+} */
+.contact {
+  width: 100%;
+  height: 100vh;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  padding-top: 7rem;
+  /* justify-content: center; */
+  align-items: center;
+}
+.contact2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.message {
+  margin: 10px;
+}
+.contact input {
+  width: 80vh;
+  height: 50px;
+  border-radius: 50px;
+  padding: 20px;
+  text-align: center;
+}
+.contact button {
+  width: 80vh;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  background-color: rebeccapurple;
+  color: white;
+}
+.maincontainer {
+  display: flex;
+  margin-top: -16px;
+}
+.description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.description h1 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-weight: bolder;
+  font-size: 120px;
+  color: rgb(27, 22, 65);
+}
+.desc {
+  font-weight: bolder;
+  color: #d7c547;
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+  position: relative;
+  left: 200px;
+  top: 30px;
+}
+.butttn {
+  display: flex;
+  justify-content: center;
+}
+.btnhome {
+  background-color: #dac74d;
+  margin: 10px 20px;
+  width: 200px;
+  height: 60px;
+  font-weight: bolder;
+  color: white;
+  box-shadow: 5px 10px 31px 3px rgba(0, 0, 0, 0.21);
+  -webkit-box-shadow: 5px 10px 31px 3px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 5px 10px 31px 3px rgba(0, 0, 0, 0.21);
+  border: none;
+  transition: background-color 0.5s ease;
+  text-decoration: none;
+}
+.btnhome:hover {
+  background-color: #cebc48;
+}
+
+.btnhome2 {
+  background-color: white;
+  color: white;
+  margin: 10px 20px;
+  width: 200px;
+  height: 60px;
+  font-weight: bolder;
+  color: black;
+  box-shadow: 5px 10px 31px 3px rgba(0, 0, 0, 0.21);
+  -webkit-box-shadow: 5px 10px 31px 3px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 5px 10px 31px 3px rgba(0, 0, 0, 0.21);
+  border: none;
+  transition: background-color 0.5s ease;
+}
+.btnhome2:hover {
+  background-color: rgb(243, 243, 243);
+}
+.tasbeh {
+  background-color: #d6c64c;
+  width: 50%;
+  height: 634px;
+  display: flex;
+  justify-content: center;
+}
+.tasbeh img {
+  height: 634px;
 }

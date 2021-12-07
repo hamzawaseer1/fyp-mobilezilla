@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  NavLink,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { NavLink, Route, Routes } from "react-router-dom";
 import About from "./About";
 import Services from "./Services";
 import Home from "./Home";
@@ -15,59 +10,57 @@ let navbar = () => {
     <>
       <div className="container">
         <div className="logo">
-          <h1>MobileZilla</h1>
+          <h1>HamzaWaseer</h1>
         </div>
         <ul>
           <li>
-            <NavLink to="/" exact className="Nav_link" activeClassName="active">
+            <NavLink
+              to="/"
+              exact="true"
+              className="Nav_link"
+              activeclassname="active"
+            >
               Home
             </NavLink>
           </li>
           <li>
             <NavLink
-              exact
+              exact="true"
               to="/about"
               className="Nav_link"
-              activeClassName="active"
+              activeclassname="active"
             >
               About
             </NavLink>
           </li>
           <li>
             <NavLink
-              exact
+              exact="true"
               to="/services"
               className="Nav_link"
-              activeClassName="active"
+              activeclassname="active"
             >
-              Services
+              Projects
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/contact"
               className="Nav_link"
-              activeClassName="active"
+              activeclassname="active"
             >
               Contact
             </NavLink>
           </li>
         </ul>
-        <input className="input" placeholder="Search Phones" type="text" />
-        <button id="signin" className="registration">
-          Sign-In
-        </button>
-        <button id="login" className="registration">
-          Sign-Up
-        </button>
       </div>
       <hr />
 
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/about" element={<About />} />
-        <Route exact path="/services" element={<Services />} />
-        <Route exact path="/contact" element={<Contact />} />
+        <Route exact="true" path="/" element={<Home />} />
+        <Route exact="true" path="/about" element={<About />} />
+        <Route exact="true" path="/services" element={<Services />} />
+        <Route exact="true" path="/contact" element={<Contact />} />
       </Routes>
     </>
   );
